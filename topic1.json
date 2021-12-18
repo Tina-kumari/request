@@ -1,0 +1,95 @@
+[
+    {
+        "id": "6135",
+        "parent_exercise_id": "6135",
+        "course_id": "175",
+        "name": "Question-1",
+        "slug": "js-if-else__Exercises-Console_Output/Question-1_md",
+        "sequence_num": 400,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Console_Output/Question-1.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "Print  the student's names according to the day?\n\n\n\n"
+            },
+            {
+                "type": "javascript",
+                "value": {
+                    "code": "var day = \"TUeSday\".toLowerCase();\n\nif (day == \"monday\") {\n  console.log(\"Dhanwantari\\nSiddhi\\Kritika\\Salon\\nMayuri\\nGauri\");\n}\nelse if (day == \"tuesday\") {\n  console.log(\"Keemaya\\nRoshni\\nPooja\\Priyanka\\nnalini\\nManisha\");\n}\nelse if (day == \"wednesday\") {\n  console.log(\"Shrusti\\Karuna\\Parveen\\Sandhya\\nLeena\\nKarishma\");\n}\nelse if (day == \"thursday\") {\n  console.log(\"Nikita\\nMona\\nPriyanka\\Tejashree\\nLovely\\nMehzebin\");\n}\nelse if (day == \"friday\") {\n  console.log(\"Pihu\\Sejal\\nChaya\\Shrestha\\nMonali\\nAardhangya\");\n}\nelse if (day == \"saturday\") {\n  console.log(\"Gunjan\\nShweta\\nRani\\nIsha\\nKusu\\Madhu\\n\");\n}\nelse if (day == \"sunday\") {\n  console.log(\"Swati\\nKhusboo\\nidhi\\Preeti\\nDipti\\nAnamika\");\n}\nelse {\n  console.log(\"Please enter valid week day\")\n}\n",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "solution",
+                "value": {
+                    "code": "\nOutput:\nkeemaya\nroshni \npooja\npriyanka\nnalini\nManisha\n\n### Explanation:\n\ntoLowercase() function is used to convert any letters into small lowercase.\n \nThe day is tuesday and at first it will check for if condition when it fails, so it will check for another else if condition when it is true it will go to the body of that particular else if and executes the statements inside of it.\n\nBecause first else if correct and it enters into the body of else if and it console the given text to it. And it is comming one by one that is because of \\n, this will change to a new line.",
+                    "testCases": []
+                }
+            }
+        ]
+    },
+    {
+        "id": "6136",
+        "parent_exercise_id": "6136",
+        "course_id": "175",
+        "name": "Question-1",
+        "slug": "js-if-else__Exercises-Debug/Question-1_md",
+        "sequence_num": 500,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Exercises-Debug/Question-1.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "`Output` Should be \"Both are same\". Debug the question as per `output`.\n\n\n\n"
+            },
+            {
+                "type": "javascript",
+                "value": {
+                    "code": "let isTrue = \"True\";\nif(isTrue){\n  console.log(\"Output should show\")\n}\nif(isTrue === \"False\"){\n  console.log(\"Both are same\")\n}\nelse {\n  console.log(\"Please run it. if all conditions false\")\n}",
+                    "testCases": []
+                }
+            }
+        ]
+    },
+    {
+        "id": "6137",
+        "parent_exercise_id": "6137",
+        "course_id": "175",
+        "name": "Project prereuisite",
+        "slug": "js-if-else__Project1/How-to-take-input_md",
+        "sequence_num": 600,
+        "review_type": "manual",
+        "submission_type": null,
+        "github_link": "https://github.com/navgurukul/newton/tree/master/js-if-else/Project1/How-to-take-input.md",
+        "solution": null,
+        "content": [
+            {
+                "type": "markdown",
+                "value": "Taking `Input`\n\nIn the world everyone has emotions and everyone will interact with each other. So in javascript also if we want to interact we can use different methods. One of them is readline-sync. \n\n\n\nTo download \u201creadline-sync\u201d in your laptop run this command line:\n\n\n\n> npm install readline-sync\nTo know more about \u201creadline-sync\u201d you can read this doc as well:\n\n\n    \n[Follow this link\n](https://launchschool.com/books/javascript/read/input_output)\n\n\nNote :\n\nBefore using \u201creadline-sync\u201d make sure that it is downloaded in your laptop then only you will be able to take the `input` from the user.\n\n\n\nExample:\n\n"
+            },
+            {
+                "type": "javascript",
+                "value": {
+                    "code": "let readlineSync = require(\"readline-sync\");\nvar yourName= readlineSync.question(\"What is your name: \")\nconsole.log(yourName);",
+                    "testCases": []
+                }
+            },
+            {
+                "type": "markdown",
+                "value": "Explaination:\n\nreadlineSync we imported by installation using npm install readline-sync. In readlineSync we have so many functions one function is question by this you will take `input` whatever that you entered here it will come as a `string` only.\n\n\n\nIf you want to use only `Integer`, then the question will give but its type is `string` not a number that we want.\n\n\n\nFor that , we have questionInt..\n\n\n\n"
+            },
+            {
+                "type": "javascript",
+                "value": {
+                    "code": "let readlineSync = require(\"readline-sync\");\nvar age= readlineSync.questionInt(\"What is your age: \")\nconsole.log(age);",
+                    "testCases": []
+                }
+            }
+        ]
+    }
+]
